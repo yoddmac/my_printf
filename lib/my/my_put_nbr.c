@@ -5,7 +5,6 @@
 ** disp
 */
 
-#include "my.h"
 
 int my_put_nbr(int nb)
 {
