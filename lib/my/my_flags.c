@@ -25,3 +25,15 @@ void print_nbr(va_list ap)
     int nb = va_arg(ap, int);
     my_put_nbr(nb);
 }
+
+void print_nbr_i(va_list ap)
+{
+    int nb = va_arg(ap, int);
+    my_put_nbr(nb);
+}
+
+void my_put_nbr_binaire(va_list ap)
+{
+    int nb = va_arg(ap, int);
+    my_putnbr_bin(nb);
+}

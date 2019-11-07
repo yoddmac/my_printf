@@ -5,7 +5,6 @@
 ** disp
 */
 
-
 int my_put_nbr(int nb)
 {
     int i = 0;

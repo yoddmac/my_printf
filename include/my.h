@@ -20,6 +20,12 @@ int my_put_nbr(int nb);
 void print_char(va_list *ap);
 void print_string(va_list ap);
 void print_nbr(va_list ap);
+void print_nbr_i(va_list ap);
+void my_put_nbr_binaire(va_list ap);
+void my_put_nbr_hexa(va_list ap);
+void my_put_nbr_capitahex(va_list ap);
+void my_put_nbr_oct(va_list ap);
+void my_put_pourcent(va_list ap);
 
 typedef struct flag_s{
     char flags;
@@ -30,6 +36,12 @@ static const flag_t tab[] = {
     {'c', &print_char},
     {'s', &print_string},
     {'d', &print_nbr},
+    {'i', &print_nbr_i},
+    {'b', &my_put_nbr_binaire},
+    {'x', &my_put_nbr_hexa},
+    {'X', &my_put_nbr_capitahex},
+    {'o', &my_put_nbr_oct},
+    {'%', &my_put_pourcent},
     {'\0', NULL}
 };
 

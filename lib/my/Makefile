@@ -23,7 +23,7 @@ $(NAME):
 clean:
 	$(RMF) $(OBJ)
 
-fclean: clean
+fclean: clean
 	$(RMF) $(NAME)
 
 re:	fclean all
