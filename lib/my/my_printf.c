@@ -6,7 +6,7 @@
 */
 
 #include <stdarg.h>
-#include "../../include/my.h"
+#include "my.h"
 
 int check_flags(char flag)
 {

@@ -6,7 +6,7 @@
 */
 
 #include <stdarg.h>
-#include "../../include/my.h"
+#include "my.h"
 
 void my_put_nbr_hexa(va_list ap)
 {

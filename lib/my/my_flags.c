@@ -6,7 +6,7 @@
 */
 
 #include <stdarg.h>
-#include "../../include/my.h"
+#include "my.h"
 
 void print_char(va_list *ap)
 {
