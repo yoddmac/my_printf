@@ -6,7 +6,7 @@
 */
 
 #include <stdarg.h>
-#include "my.h"
+#include "include/my.h"
 
 int check_flags(char flag)
 {
@@ -34,3 +34,5 @@ int my_printf(char const *str, ...)
     va_end(ap);
     return (0);
 }
+
+cc main.c lib/my/my_flags.c lib/my/my_flags2.c -L lib/my -l my --include lib/my/include/my.h

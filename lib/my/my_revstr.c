@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2019
+** disp
+** File description:
+** disp
+*/
+
 char *my_revstr(char *str)
 {
     int cpt = 0;

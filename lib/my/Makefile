@@ -20,7 +20,6 @@ all:	$(NAME)
 $(NAME):
 		cc -c $(SRC)
 		$(CC) $(NAME) $(OBJ)
-		cp my.h ../../include
 clean:
 	$(RMF) $(OBJ)
 
