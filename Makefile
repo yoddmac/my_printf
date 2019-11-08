@@ -5,37 +5,27 @@
 ## Makefile
 ##
 
-CC	=	gcc
-
 RM	=	rm -rf
 
-NAME	=	my_printf
+SRC	=	$(./lib/my/Makefile)
 
-CFLAGS	+=	-W -Wall -Wextra -I./include/ -L./lib -lmy -g 
+OBJ	=	$(SRC:.=.o)
 
-SRC	=	my_printf.c \
-		my_flags.c
+NAME	=	libmy.a
 
-OBJ	=	$(SRC:.c=.o)
-OBJ	=	$(SRC:.c=.c~)
-OBJ	=	$(SRC:.c=.dSYM)
+all:	$(NAME)
 
-all: compil
-
-compil:	$(SRC)
-	(cd ./lib/my/; make)
-	$(CC) -o $(NAME) $(SRC) $(CFLAGS)
-
-valgrind: $(SRC)
-	$(CC) -g $(NAME) $(SRC) $(FLAGS)
+$(NAME) : $(OBJ)
+	$(MAKE) -C ./lib/my
 
 clean:
-	$(RM) $(OBJ)
-	$(RM) $(OBJ)
+	$(RM) *.c~
+	$(RM) ./lib/my/*.o
 
 fclean:
 	$(RM) $(NAME)
+	$(RM) ./lib/my/$(NAME)
 
 re:	fclean all
 
-PHONY:	re all clean fclean
+.PHONY:	re all clean fclean

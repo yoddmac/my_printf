@@ -20,6 +20,7 @@ all:	$(NAME)
 $(NAME):
 		cc -c $(SRC)
 		$(CC) $(NAME) $(OBJ)
+		cp libmy.a ../..
 clean:
 	$(RMF) $(OBJ)
 

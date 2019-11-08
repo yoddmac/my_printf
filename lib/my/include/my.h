@@ -26,6 +26,7 @@ void my_put_nbr_hexa(va_list ap);
 void my_put_nbr_capitahex(va_list ap);
 void my_put_nbr_oct(va_list ap);
 void my_put_pourcent(va_list ap);
+void my_put_point(va_list ap);
 
 typedef struct flag_s{
     char flags;
@@ -42,6 +43,7 @@ static const flag_t tab[] = {
     {'X', &my_put_nbr_capitahex},
     {'o', &my_put_nbr_oct},
     {'%', &my_put_pourcent},
+    {'p', &my_put_point},
     {'\0', NULL}
 };
 

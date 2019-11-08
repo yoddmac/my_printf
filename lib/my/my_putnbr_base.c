@@ -78,3 +78,23 @@ int my_putnbr_oct(int nb)
     my_putchar(r + '0');
     return (r);
 }
+
+int my_putnbr_point(long int p)
+{
+    int r = 0;
+
+    if (p >= 16) {
+        r = p % 16;
+        p = p / 16;
+        my_putnbr_point(p);
+    }
+    else if (p > 0) {
+        r = p % 16;
+        p = p / 16;
+    }
+    if (r > 9)
+        my_putchar(r + 87);
+    else {
+        my_putchar(r + 48);
+    }
+}

@@ -35,4 +35,4 @@ int my_printf(char const *str, ...)
     return (0);
 }
 
-cc main.c lib/my/my_flags.c lib/my/my_flags2.c -L lib/my -l my --include lib/my/include/my.h
+//cc main.c lib/my/my_flags.c lib/my/my_flags2.c -L lib/my -l my --include lib/my/include/my.h
