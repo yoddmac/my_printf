@@ -23,7 +23,7 @@ int my_printf(char const *str, ...)
     int save = 0;
 
     va_start(ap, str);
-    for(int i = 0; str[i] != '\0'; i++) {
+    for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] == '%') {
             i++;
             save = check_flags(str[i]);
@@ -34,5 +34,3 @@ int my_printf(char const *str, ...)
     va_end(ap);
     return (0);
 }
-
-//cc main.c lib/my/my_flags.c lib/my/my_flags2.c -L lib/my -l my --include lib/my/include/my.h

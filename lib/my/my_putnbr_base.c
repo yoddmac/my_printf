@@ -14,7 +14,7 @@ int my_putnbr_bin(int nb)
         nb = nb / 2;
         my_putnbr_bin(nb);
     }
-    else if (nb > 0) { 
+    else if (nb > 0) {
         r = nb % 2;
         nb = nb/ 2;
     }

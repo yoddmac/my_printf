@@ -1,8 +1,8 @@
 ##
-## EPITECH PROJECT, 2019
-## Makefile
-## File description:
-## Makefile
+## EPITECH PROJECT, 2019
+## Makefile
+## File description:
+## Makefile
 ##
 
 CC	=	ar rc

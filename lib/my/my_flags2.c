@@ -36,5 +36,5 @@ void my_put_point(va_list ap)
 {
     my_putstr("0x");
     long int nb = va_arg(ap, long int);
-     my_putnbr_point(nb);
+    my_putnbr_point(nb);
 }
