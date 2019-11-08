@@ -27,9 +27,12 @@ int my_printf(char const *str, ...)
         if (str[i] == '%') {
             i++;
             save = check_flags(str[i]);
-            if (save != -1)
+            if (save != -1) {
                 tab[save].ptr_flags(ap);
-        }
+            }
+    }
+    else
+        my_putchar(str[i]);
     }
     va_end(ap);
     return (0);
