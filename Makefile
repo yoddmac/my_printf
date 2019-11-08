@@ -21,6 +21,7 @@ $(NAME) : $(OBJ)
 clean:
 	$(RM) *.c~
 	$(RM) ./lib/my/*.o
+	$(RM) ./lib/my/include/*.gch
 
 fclean:
 	$(RM) $(NAME)
