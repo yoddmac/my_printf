@@ -28,7 +28,6 @@ void my_put_nbr_oct(va_list ap)
 
 void my_put_pourcent(va_list ap)
 {
-    //my_putchar(' ');
     my_putchar('%');
 }
 
