@@ -8,9 +8,9 @@
 #include <stdarg.h>
 #include "include/my.h"
 
-void print_char(va_list *ap)
+void print_char(va_list ap)
 {
-    char c = va_arg(*ap, int);
+    char c = va_arg(ap, int);
     my_putchar(c);
 }
 

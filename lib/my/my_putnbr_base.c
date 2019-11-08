@@ -5,6 +5,8 @@
 ** disp
 */
 
+#include "include/my.h"
+
 int my_putnbr_bin(int nb)
 {
     int r = 0;
@@ -40,6 +42,7 @@ int my_putnbr_hex(int nb)
     else {
         my_putchar(r + 48);
     }
+    return (0);
 }
 
 int my_putnbr_capit_hex(int nb)
@@ -60,6 +63,7 @@ int my_putnbr_capit_hex(int nb)
     else {
         my_putchar(r + 48);
     }
+    return (0);
 }
 
 int my_putnbr_oct(int nb)
@@ -97,4 +101,5 @@ int my_putnbr_point(long int p)
     else {
         my_putchar(r + 48);
     }
+    return (0);
 }

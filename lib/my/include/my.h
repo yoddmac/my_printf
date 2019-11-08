@@ -13,11 +13,16 @@
 #include <string.h>
 #include <stdlib.h>
 
+int my_putnbr_bin(int nb);
+int my_putnbr_hex(int nb);
+int my_putnbr_capit_hex(int nb);
+int my_putnbr_oct(int nb);
+int my_putnbr_point(long int p);
 int my_strlen(char const *str);
 int my_putstr(char const *str);
 void my_putchar(char c);
 int my_put_nbr(int nb);
-void print_char(va_list *ap);
+void print_char(va_list ap);
 void print_string(va_list ap);
 void print_nbr(va_list ap);
 void print_nbr_i(va_list ap);
