@@ -13,6 +13,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+int my_putnbr_unisigned(unsigned int nb);
+int my_putnbr_no_p(int nb);
 int my_putnbr_bin(int nb);
 int my_putnbr_hex(int nb);
 int my_putnbr_capit_hex(int nb);
@@ -32,6 +34,8 @@ void my_put_nbr_capitahex(va_list ap);
 void my_put_nbr_oct(va_list ap);
 void my_put_pourcent(va_list ap);
 void my_put_point(va_list ap);
+void my_putnbr_no_print(va_list ap);
+void my_putnbr_un(va_list ap);
 
 typedef struct flag_s{
     char flags;
@@ -49,6 +53,8 @@ static const flag_t tab[] = {
     {'o', &my_put_nbr_oct},
     {'%', &my_put_pourcent},
     {'p', &my_put_point},
+    {'S', &my_putnbr_no_print},
+    {'u', &my_putnbr_un},
     {'\0', NULL}
 };
 
