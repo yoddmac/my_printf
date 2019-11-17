@@ -14,7 +14,7 @@ int check_flags(char flag)
         if (tab[i].flags == flag)
             return (i);
     }
-    return (- 1);
+    return (-1);
 }
 
 int my_printf(char const *str, ...)
